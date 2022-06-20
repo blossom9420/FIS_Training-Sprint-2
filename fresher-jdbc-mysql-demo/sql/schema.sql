@@ -1,0 +1,23 @@
+CREATE TABLE EMPLOYEE
+(
+    ID INT NOT NULL AUTO_INCREMENT,
+    NAME VARCHAR(100) NOT NULL,
+    SALARY DECIMAL(15, 2) NOT NULL,
+    CREATED_DATE DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (ID)
+);
+
+CREATE TABLE `jdbc_demo`.`detective` (
+  `id` BIGINT(20) NOT NULL,
+  `createdAt` DATETIME NULL,
+  `modifiedAt` DATETIME NULL,
+  `username` VARCHAR(45) NULL,
+  `lastname` VARCHAR(45) NULL,
+  `password` VARCHAR(45) NULL,
+  `hiringDate` DATETIME NULL,
+  `badgeNumber` VARCHAR(45) NULL,
+  `rank` VARCHAR(45) NULL,
+  `armed` TINYINT NULL,
+  `status` VARCHAR(45) NULL,
+  PRIMARY KEY (`id`));
+
